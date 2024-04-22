@@ -1,9 +1,9 @@
 import React from "react"
-import Info from "./portfolio/info.tsx"
-import Projects from "./portfolio/projects.tsx"
-import Experience from "./portfolio/experience.tsx"
-import Skills from "./portfolio/skills.tsx"
-import Contact from "./portfolio/contact.tsx"
+import Info from "./portfolio/info"
+import Projects from "./portfolio/projects"
+import Experience from "./portfolio/experience"
+import Skills from "./portfolio/skills"
+import Contact from "./portfolio/contact"
 
 function Home() {
   return (
