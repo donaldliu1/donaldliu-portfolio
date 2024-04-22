@@ -7,9 +7,11 @@ import Contact from "./portfolio/contact.tsx"
 
 function Home() {
   return (
-    <div className="w-dvh h-dvh flex justify-center items-center content-center border-solid border-2 bg-purple-400 ">
-      <div className="w-3/5 h-4/6 flex space justify-center items-center flex-col bg-red-100">
-        <div className="h-full flex flex-row content-center bg-blue-100">
+    
+    <div className="w-dvh h-dvh flex flex-col justify-center items-center content-center border-solid border-2 bg-purple-400">
+      <p className="text-5xl"> Donald Liu</p>
+      <div className="w-4/5 h-5/6 flex space justify-center items-center flex-col bg-inherit bg-red-400">
+        <div className="h-full flex flex-row content-center bg-inherit">
           <div className="w-4/5 flex flex-col ">
             <Info />
             <Projects />
@@ -19,7 +21,7 @@ function Home() {
             <Skills />
           </div>
         </div>
-        <div className="h-1/10 flex flex-row justify-center ">
+        <div className="w-full flex flex-row justify-center ">
           <Contact />
         </div>
       </div>
