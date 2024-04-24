@@ -5,12 +5,12 @@ interface ProjectProps {
 
 const Project_temp: React.FC<ProjectProps> = ({ name, img }) => {
     return (
-    <div>
-        <div><p>{name}</p></div>
+    <button className="border flex flex-col justify-between">
+        <div className="place-self-center"><p>{name}</p></div>
         <div>
-            <img src={img} alt={name} width={100} height={100}/>
+            <img src={img} alt={name}/>
         </div>
-    </div>
+    </button>
     );
 }
 
