@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <>
-            <div className="w-full border-solid border-2 border-black rounded-md bg-green-200 m-2.5">
+            <div className="grid row-start-11 row-span-2 col-span-full border-solid border-2 border-black rounded-md bg-purple-900 m-1.5 text-white p-3">
                 <p> Contact</p>
             </div>
         </>
