@@ -8,11 +8,11 @@ export default function NavBar() {
                     <img src="" className="mx-auto pt-5"/>
                 </button>
                 <button className="transform transition duration-500 hover:scale-110 p-2 text-white">
-                    <p>Push & Pull</p>
+                    <p>Fauna Green Living</p>
                     <img src="" className="mx-auto pt-5"/>
                 </button>
                 <button className="transform transition duration-500 hover:scale-110 p-2 text-white">
-                    <p>Guesser</p>
+                    <p>PokePull</p>
                     <img src="" className="mx-auto pt-5"/>
                 </button>
                 <button className="transform transition duration-500 hover:scale-110 p-2 text-white">
