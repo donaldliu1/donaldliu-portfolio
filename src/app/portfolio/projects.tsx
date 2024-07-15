@@ -10,8 +10,8 @@ export default function Projects() {
                 </div>
                 <div className="grid grid-cols-3 gap-3 ">
                     <Project_temp name={"Website"} img={"logo1.png"} focus={"Tailwind, Next.js, TypeScript"}/>
-                    <Project_temp name={"FGL"} img={"logo2.png"} focus={"RESTful API, MongoDB, Mongoose"}/>
-                    <Project_temp name={"PokePull"} img={"logo3.png"} focus={"Shopify, CI/CD, TypeScript"}/>
+                    <Project_temp name={"FGL"} img={"logo2.png"} focus={"Shopify, CI/CD, TypeScript"}/>
+                    <Project_temp name={"PokePull"} img={"logo3.png"} focus={"RESTful API, MongoDB, Mongoose"}/>
                 </div>
             </div>
         </>
