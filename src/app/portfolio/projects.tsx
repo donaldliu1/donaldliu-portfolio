@@ -6,10 +6,16 @@ import Modal from './component/Modal';
 export default function Projects() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedProject, setSelectedProject] = useState({ name: '', img: '', focus: '' });
+    const [spanVisibility, setSpanVisibility] = useState({
+        "Website": true,
+        "FGL": true,
+        "PokePull": true
+    });
 
     const handleButtonClick = (name, img, focus) => {
         setSelectedProject({ name, img, focus });
         setIsModalVisible(true);
+        setSpanVisibility((prev) => ({ ...prev, [name]: false }));
     };
 
     const handleClose = () => {
@@ -18,7 +24,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className=" p-3 grid col-start-1 row-start-5 row-end-11 col-span-5 bg-purple-900 m-1.5 text-white border-transparent border-2 rounded-md hover:border-white transition duration-500">
+            <div className="p-3 grid col-start-1 row-start-5 row-end-11 col-span-5 bg-purple-900 m-1.5 text-white border-transparent border-2 rounded-md hover:border-white transition duration-500">
                 <div className="flex justify-between h-6">
                     <p className="text-xl font-medium h-6">Projects</p>
                     <img src=""/>
@@ -28,18 +34,21 @@ export default function Projects() {
                         name="Website" 
                         img="logo1.png" 
                         focus="Tailwind, Next.js, TypeScript" 
+                        isSpanVisible={spanVisibility["Website"]}
                         onClick={() => handleButtonClick("Website", "logo1.png", "Tailwind, Next.js, TypeScript")}
                     />
                     <Project_temp 
                         name="FGL" 
                         img="logo2.png" 
                         focus="Shopify, CI/CD, TypeScript" 
+                        isSpanVisible={spanVisibility["FGL"]}
                         onClick={() => handleButtonClick("FGL", "logo2.png", "Shopify, CI/CD, TypeScript")}
                     />
                     <Project_temp 
                         name="PokePull" 
                         img="logo3.png" 
                         focus="RESTful API, MongoDB, Mongoose" 
+                        isSpanVisible={spanVisibility["PokePull"]}
                         onClick={() => handleButtonClick("PokePull", "logo3.png", "RESTful API, MongoDB, Mongoose")}
                     />
                 </div>
