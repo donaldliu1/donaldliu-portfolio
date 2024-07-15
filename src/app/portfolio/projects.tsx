@@ -12,7 +12,7 @@ export default function Projects() {
         "PokePull": true
     });
 
-    const handleButtonClick = (name, img, focus) => {
+    const handleButtonClick = (title: string, start: string, end: string) => {
         setSelectedProject({ name, img, focus });
         setIsModalVisible(true);
         setSpanVisibility((prev) => ({ ...prev, [name]: false }));

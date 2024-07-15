@@ -15,7 +15,7 @@ export default function Skills() {
         Other: true
     });
 
-    const handleButtonClick = (catergory) => {
+    const handleButtonClick = (catergory: string) => {
         setSelectedSkill({ catergory });
         setIsModalVisible(true);
         setSpanVisibility((prev) => ({ ...prev, [catergory]: false }));
