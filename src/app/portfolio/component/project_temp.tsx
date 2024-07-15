@@ -4,9 +4,9 @@ import React from 'react';
 
 // Defines expected data types of JobProps
 interface ProjectProps {
-    name: string
-    img: string
-    focus: string
+    name: string;
+    img: string;
+    focus: string;
     onClick: () => void;
     isSpanVisible: boolean;
 }

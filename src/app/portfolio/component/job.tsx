@@ -1,12 +1,10 @@
 "use client"
-// Import react
 import React from 'react';
 
-// Defines expected data types of JobProps
 interface JobProps {
-    title: string
-    start: string
-    end: string
+    title: string;
+    start: string;
+    end: string;
     onClick: () => void;
     isSpanVisible: boolean;
 }

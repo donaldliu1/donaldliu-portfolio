@@ -3,21 +3,27 @@ import React, { useState } from 'react';
 import JobProps from "./component/job";
 import Modal from './component/Modal';
 
+interface Job {
+    title: string;
+    start: string;
+    end: string;
+}
+
 export default function Experience() {
-    const [isModalVisible, setIsModalVisible] = useState(false);
-    const [selectedJob, setSelectedJob] = useState({ title: '', start: '', end: '' });
-    const [spanVisibility, setSpanVisibility] = useState({
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+    const [selectedJob, setSelectedJob] = useState<Job>({ title: '', start: '', end: '' });
+    const [spanVisibility, setSpanVisibility] = useState<{ [key: string]: boolean }>({
         "School of Code": true,
         "Vue": true
     });
 
-    const handleButtonClick = (title: string, start: string, end: string) => {
+    const handleButtonClick = (title: string, start: string, end: string): void => {
         setSelectedJob({ title, start, end });
         setIsModalVisible(true);
         setSpanVisibility((prev) => ({ ...prev, [title]: false }));
     };
 
-    const handleClose = () => {
+    const handleClose = (): void => {
         setIsModalVisible(false);
     };
 
