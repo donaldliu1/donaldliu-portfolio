@@ -11,7 +11,7 @@ export default function Experience() {
         "Vue": true
     });
 
-    const handleButtonClick = (title, start, end) => {
+    const handleButtonClick = (title: string, start: string, end: string) => {
         setSelectedJob({ title, start, end });
         setIsModalVisible(true);
         setSpanVisibility((prev) => ({ ...prev, [title]: false }));
