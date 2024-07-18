@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 
-
 interface ProjectProps {
     name: string;
     img: string;
@@ -9,7 +8,6 @@ interface ProjectProps {
     onClick: () => void;
     isSpanVisible: boolean;
 }
-
 
 const Project_temp: React.FC<ProjectProps> = ({ name, img, focus, onClick, isSpanVisible }) => {
     return (

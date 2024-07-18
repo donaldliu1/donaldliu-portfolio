@@ -14,7 +14,7 @@ export default function Projects() {
     const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
     const [selectedProject, setSelectedProject] = useState<Project>({ name: '', img: '', focus: '', url: '' }); 
     const [spanVisibility, setSpanVisibility] = useState<{ [key: string]: boolean }>({
-        "Website": true,
+        "Portfolio": true,
         "FGL": true,
         "PokePull": true
     });
@@ -40,7 +40,7 @@ export default function Projects() {
                         name="Portfolio" 
                         img="logo1.png" 
                         focus="Tailwind, Next.js, TypeScript" 
-                        isSpanVisible={spanVisibility["Website"]}
+                        isSpanVisible={spanVisibility["Portfolio"]}
                         onClick={() => handleButtonClick("Portfolio", "logo1.png", "This is a passion project for my online portfolio, starting from complete scratch, my main focus of this project is to learn Tailwind and refine my Typescript while using Next.js, JavaScript and HTML. The purpose of this website is to hopefully give an insight into who I am and have an area where I can tinker and play with code!", "https://www.donaldliu.social/")}
                     />
                     <Project_temp 
@@ -60,8 +60,8 @@ export default function Projects() {
                 </div>
             </div>
             {isModalVisible && (
-                <Modal onClose={handleClose}>
-                <div className="p-4 max-h-screen overflow-y-auto flex justify-center items-center flex-col">
+                <Modal onClose={handleClose} >
+                <div className="m-4 max-h-screen overflow-y-auto flex justify-center items-center flex-col">
                     <a href={selectedProject.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700"> 
                         <h1 className="text-3xl mb-4 text-center cursor-pointer">{selectedProject.name}</h1>
                     </a>
