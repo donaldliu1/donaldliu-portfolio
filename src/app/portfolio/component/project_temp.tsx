@@ -1,8 +1,7 @@
 "use client"
-// Import react
 import React from 'react';
 
-// Defines expected data types of JobProps
+
 interface ProjectProps {
     name: string;
     img: string;
@@ -11,7 +10,7 @@ interface ProjectProps {
     isSpanVisible: boolean;
 }
 
-// Variable called Project_temp which takes in name, img, focus as input
+
 const Project_temp: React.FC<ProjectProps> = ({ name, img, focus, onClick, isSpanVisible }) => {
     return (
         <button className="relative flex flex-col justify-between text-white p-0.5 text-white border-transparent border-2 rounded-md hover:border-white transition duration-500" onClick={onClick}>
