@@ -1,16 +1,19 @@
+// skill.tsx
 "use client"
 import React from 'react';
 
 interface SkillsProps {
-    catergory: string
+    catergory: string;
     onClick: () => void;
     isSpanVisible: boolean;
 }
 
-// Variable called SkillProps which takes in category as input
 const SkillProps: React.FC<SkillsProps> = ({ catergory, onClick, isSpanVisible }) => {
     return (
-        <button className="relative flex flex-col justify-between text-white m-0.5 text-white border-transparent border-2 rounded-md hover:border-white transition duration-500" onClick={onClick}>
+        <button 
+            className="relative flex flex-col justify-between text-white m-0.5 border-transparent border-2 rounded-md hover:border-white transition duration-500" 
+            onClick={onClick}
+        >
             <div className="flex">
                 <p className="pl-1">{catergory}</p>
                 {isSpanVisible && (
